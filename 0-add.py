@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""python_variable_annotations"""
+"""a type-annotated function"""
 
 
 def add(a: float, b: float) -> float:
-    """A function that uses variable annotation"""
+    """an add type-annotated function"""
     return a + b
