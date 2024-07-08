@@ -1,10 +1,14 @@
 #!/usr/bin/env python3
-""" using the random modul """
+"""
+0x01. Python - Async
+"""
 import asyncio
-from random import uniform
-from typing import Generator
+import random
 
-async def async_generator() -> Generator[float, None, None]:
-    for _ in range(10):
-        await asyncio.sleep(1)
-        yield uniform(0, 10)
+
+async def wait_random(max_delay: int = 10) -> float:
+    """An asynchronous coroutine that waits for a random delay
+    between 0 and max_delay."""
+    delay = random.uniform(0, max_delay)
+    await asyncio.sleep(delay)
+    return delay
