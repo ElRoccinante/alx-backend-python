@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-""" using the random modul Write an asynchronous coroutine  """
+""" using the random modul """
 import asyncio
 from random import uniform
 from typing import Generator
